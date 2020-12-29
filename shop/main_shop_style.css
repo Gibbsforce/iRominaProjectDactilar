@@ -1,0 +1,487 @@
+body {
+margin: auto 0;
+padding: 0;
+background-color: #fff;
+user-select: none;
+}
+
+.firstnavbar {
+width: 100%;
+}
+
+.firstnavbar ul {
+text-align: center;
+padding: 20px;
+}
+
+.firstnavbar ul li {
+list-style: none;
+display: inline-block;
+padding: 35px 45px;
+}
+
+.firstnavbar ul li a {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+transform: scale(1,1.05);
+color: #000;
+font-size: 14px;
+font-family:'Avenir LT W01 65 Medium', sans-serif;
+letter-spacing: 1.5px;
+font-weight: 500;
+/*transition: ease-in-out .2s;*/
+}
+
+.firstnavbar ul li a.shop {
+color: rgba(157, 162, 171,.9);
+}
+
+.firstnavbar ul li a:hover {
+color: rgba(157, 162, 171,.9);
+transition: .2s;
+}
+
+.logo {
+width: 100%;
+}
+
+.logo ul {
+text-align: center;
+margin: 0px;
+padding: 0px;
+}
+
+.logo ul li {
+list-style: none;
+display: inline-block;
+padding: 25px;
+}
+
+.logo ul li a {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+color: #034146;
+font-size: 36px;
+
+/*font-family:'Baskerville';*/
+
+font-family: 'Libre Baskerville', serif;
+transform: scale(1.25,1.5);
+
+/*letter-spacing: 1px;
+word-spacing: 4px;*/
+
+font-weight: 500;
+
+/*transition: all ease 0.5s;*/
+}
+
+.motto-image {
+background:#fff;
+text-align: center;
+height: 120px;
+}
+
+.motto-image img {
+max-width: 100%;
+width: 600px;
+height: 55px;
+}
+
+.secondnavbar {
+width: 100%;
+}
+
+.secondnavbar ul {
+text-align: center;
+padding: 0px;
+margin: 0px;
+height: 40px; /*maybe gotta remove lol*/
+}
+
+.secondnavbar ul li {
+list-style: none;
+display: inline-block;
+text-decoration: none;
+padding: 30px;
+}
+
+.secondnavbar ul li a {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+cursor: pointer;
+color: #000;
+font-size: 10px;
+font-family:'Avenir LT W01 65 Medium', sans-serif;
+letter-spacing: 2px;
+font-weight: 300;
+/*transition: 1s ease-in-out;*/
+}
+
+.secondnavbar ul li a:hover {
+color: rgba(157, 162, 171,.9);
+transition: .2s;
+}
+
+.full-container {
+margin: 20px;
+padding: 0px;
+text-align: center;
+}
+
+.container {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-auto-rows: repeat(1,1fr); /*350px 350px;*/
+grid-gap: 40px;
+grid-auto-flow: dense;
+}
+
+.gallery-item {
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+.gallery-item .unique-piece {
+width: 100px;
+height: 100px;
+background: #fff;
+opacity: .7;
+position: absolute;
+}
+
+.gallery-item .unique-piece .unique-piece-text {
+justify-content: center;
+display: flex;
+width: 100px;
+height: 100px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+font-family: sans-serif;
+font-size: 14px;
+z-index: 4;
+transition: .5s linear;
+}
+
+.gallery-item:hover .unique-piece-text {
+opacity: 0;
+}
+
+.gallery-item .image{
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.gallery-item .image img {
+width: 100%;
+height: 100%;
+object-fit: fill;
+object-position: 50% 50%;
+cursor: pointer;
+transition: .5s ease-in-out;
+}
+
+.gallery-item:hover .image img {
+transform: scale(1.5);
+opacity: 0.2;
+}
+
+.gallery-item .text-title-item {
+opacity: 0;
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+font-size: 25px;
+pointer-events: none;
+z-index: 4;
+transition: .3s ease-in-out;
+/*-webkit-backdrop-filter: blur(5px) saturate(1.8);
+backdrop-filter: blur(5px) saturate(1.8);*/
+color: #022d28;
+font-family: 'Libre Baskerville', serif;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 36px;
+}
+
+.gallery-item:hover .text-title-item {
+opacity: 1;
+animation: move-down .3s linear;
+/*padding: 1em;*/
+width: 100%;
+color: #022d28;
+}
+
+.gallery-item .text-description-items {
+opacity: 0;
+position: absolute;
+bottom: 20%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: #FFF;
+font-size: 22px;
+pointer-events: none;
+z-index: 4;
+transition: .3s ease-in-out;
+/*-webkit-backdrop-filter: blur(5px) saturate(1.8);
+backdrop-filter: blur(5px) saturate(1.8);*/
+font-family:'AvenirLTW01-95BlackObli', sans-serif;
+color: #000;
+font-weight: 800;
+}
+
+.gallery-item:hover .text-description-items {
+opacity: 1;
+animation: move-up .3s linear;
+/*padding: 1em;*/
+width: 100%;
+color: rgba(0,0,0,.3);
+}
+
+.footer {
+text-align: center;
+padding: 30px;
+}
+
+.instagram-link li {
+list-style: none;
+display: inline-block;
+padding: 30px;
+}
+
+.instagram-link li a {
+display: block;
+text-decoration: none;
+color: #000;
+font-size: 15px;
+font-family:'Avenir LT W01 65 Medium', sans-serif;
+letter-spacing: 1px;
+font-weight: 300;
+}
+
+.instagram-link li a:hover {
+color: rgba(157, 162, 171,.9);
+transition: .2s;
+}
+
+.full-container-instagram {
+margin: 20px;
+padding: 0px;
+text-align: center;
+}
+
+.container-instagram {
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-auto-rows: repeat(1,1fr); /*350px 350px;*/
+grid-gap: 20px;
+grid-auto-flow: dense;
+}
+
+.gallery-item-instagram {
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+.gallery-item-instagram .image-instagram {
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.gallery-item-instagram .image-instagram img {
+width: 100%;
+height: 100%;
+object-fit: fill;
+object-position: 50% 50%;
+cursor: pointer;
+transition: .5s ease-in-out;
+}
+
+.gallery-item-instagram:hover .image-instagram img {
+opacity: 0.2;
+}
+
+@media screen and (max-width: 1020px) {
+.gallery-item .text-title-item {
+font-size: 24px;
+}
+
+.gallery-item .text-description-items {
+font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+body {
+//overflow-x: hidden;
+}
+
+.firstnavbar-links {
+margin: 0;
+position: absolute;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+width: 100%;
+transition: transform 0.5s ease-in;
+transform: translateX(-100%);
+z-index: 1;
+justify-content: center;
+}
+
+.firstnavbar ul {
+padding: 0;
+}
+
+.firstnavbar ul li {
+opacity: 0;
+}
+
+.firstnavbar-cel {
+position: relative;
+z-index: 1;
+padding: 15px;
+}
+
+.firstnavbar-cel-button {
+width: 25px;
+margin: 0px;
+cursor: pointer;
+}
+
+.firstnavbar-cel-button div {
+background-color: #034146;
+height: 4px;
+margin: 0px;
+transition: all .3s ease;
+}
+
+.firstnavbar-cel-button div:nth-child(2) {
+background-color: #fff;
+}
+
+.firstnavbar-cel-button div:nth-child(4) {
+background-color: #fff;
+}
+
+.logo ul li a {
+font-size: 18px;
+}
+
+.motto-image img {
+max-width: 100%;
+width: 400px;
+height: 35px;
+}
+
+.secondnavbar ul {
+text-align: center;
+height: 10px; /*maybe gotta remove lol this too btw cuz it's the same*/
+margin: 0px;
+}
+.secondnavbar ul li {
+padding: 0px;
+width: 20%;
+display: inline-block;
+letter-spacing: 1px;
+}
+
+.secondnavbar ul li a {
+letter-spacing: 1px;
+}
+
+.container {
+grid-template-columns: repeat(2,1fr);
+grid-gap: 10px;
+/*grid-auto-rows: 350px 350px;*/
+}
+
+.gallery-item .unique-piece {
+width: 50px;
+height: 50px;
+background: #fff;
+opacity: .7;
+position: absolute;
+}
+
+.gallery-item .unique-piece .unique-piece-text {
+display: flex;
+width: 50px;
+height: 50px;
+font-size: 10px;
+z-index: 4;
+transition: .5s linear;
+}
+
+.gallery-item:hover .unique-piece-text {
+opacity: 0;
+}
+
+.gallery-item .text-title-item {
+font-size: 20px;
+}
+}
+
+.firstnavbar-active {
+transform: translateX(0%);
+}
+
+@keyframes fadingNavCel {
+from{
+opacity: 0;
+transform: translateX(50px);
+}
+to{
+opacity: 1;
+transform: translateX(0px);
+}
+}
+
+.toggle .line1 {
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line3 {
+opacity: 0;
+}
+
+.toggle .line5 {
+transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes move-down {
+0%{
+top: 10%;
+}
+50%{
+top: 15%;
+}
+100%{
+top: 20%;
+}
+}
+
+@keyframes move-up {
+0%{
+bottom: 10%;
+}
+50%{
+bottom: 15%;
+}
+100%{
+bottom: 20%;
+}
+}

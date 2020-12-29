@@ -1,0 +1,137 @@
+body {
+max-width: 1080px;
+margin: auto;
+background-color: #034146;
+padding: 10px 10px 0px 10px;
+justify-content: center;
+text-align: center;
+user-select: none;
+}
+
+.background-video-container {
+overflow: hidden;
+}
+
+.background-video-container video {
+opacity: 1;
+z-index: -1;
+position: absolute;
+object-fit: cover;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.cover-logo {
+max-width: 100%;
+justify-content: center;
+text-align: center;
+}
+
+.cover-logo img {
+width: 20%;
+height: 20%;
+}
+
+.firstnavbar {
+width: 100%;
+display: inline-block;
+}
+
+.firstnavbar ul {
+text-align: center;
+padding: 180px 20px;
+}
+
+.firstnavbar ul li {
+list-style: none;
+display: inline-block;
+padding: 35px 45px;
+}
+
+.firstnavbar ul li a {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+transform: scale(1,1.05);
+color: #d1dedb;
+font-size: 14px;
+font-family:'Avenir LT W01 65 Medium', sans-serif;
+letter-spacing: 1.5px;
+font-weight: 700;
+/*transition: ease-in-out .2s;*/
+}
+
+.firstnavbar ul li a.home {
+color: rgba(209, 222, 219, .5);
+}
+
+.firstnavbar ul li a:hover {
+color: rgba(209, 222, 219, .5);
+transition: .2s;
+}
+
+.action-lang {
+width: 100%;
+display: inline-block;
+}
+
+.action-lang ul {
+text-align: center;
+padding: 0;
+text-align: right;
+margin: 10px;
+}
+
+.action-lang ul li {
+list-style: none;
+display: inline-block;
+padding: 0 5px;
+
+}
+
+.action-lang ul li a {
+pointer: cursor;
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+transform: scale(1,1.05);
+color: #d1dedb;
+font-size: 12px;
+font-family:'Avenir LT W01 65 Medium', sans-serif;
+letter-spacing: 1.5px;
+font-weight: 700;
+/*transition: ease-in-out .2s;*/
+}
+
+.action-lang ul li a:hover {
+color: rgba(209, 222, 219, .5);
+transition: .2s;
+}
+
+@media screen and (max-width: 768px) {
+body {
+padding: 10px 0px;
+}
+
+.cover-logo img {
+width: 30%;
+height: 30%;
+}
+
+.firstnavbar {
+max-width:100%;
+}
+
+.firstnavbar ul {
+padding: 180px 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.firstnavbar ul li {
+padding: 10px 15px;
+}
+}

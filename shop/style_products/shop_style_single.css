@@ -1,0 +1,253 @@
+body {
+margin: auto 0;
+padding: 0;
+background-color: #fff;
+}
+
+.firstnavbar {
+width: 100%;
+user-select: none;
+}
+
+.firstnavbar ul {
+text-align: center;
+padding: 20px;
+margin: 0px;
+}
+
+.firstnavbar ul li {
+list-style: none;
+display: inline-block;
+padding: 35px 45px;
+}
+
+.firstnavbar ul li a {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+transform: scale(1,1.05);
+color: #000;
+font-size: 14px;
+font-family:'Avenir LT W01 65 Medium', sans-serif;
+letter-spacing: 1.5px;
+font-weight: 500;
+/*transition: ease-in-out .2s;*/
+}
+
+.firstnavbar ul li a.shop {
+color: rgba(157, 162, 171,.9);
+}
+
+.firstnavbar ul li a:hover {
+color: rgba(157, 162, 171,.9);
+transition: .2s;
+}
+
+.container {
+display: flex;
+ustify-content: center;
+margin: 0px 80px 20px;
+}
+
+.columns {
+width: 100%;
+//display: flex;
+grid-template-columns: repeat(1,1fr);
+grid-gap: 40px;
+}
+
+.columns:first-child {
+width: 50%;
+}
+
+//.item {
+//width: 100%;
+//height: 100%;
+//position: relative;
+//}
+
+.item-texts {
+padding: 0px 100px 0px 0px;
+}
+
+.item img {
+display: flex;
+position: relative;
+width: 100%;
+height: 100%;
+object-fit: fill;
+object-position: 50% 50%;
+}
+
+.container .columns .item .item-texts h1 {
+margin: 0px;
+text-transform: uppercase;
+color: #032d28;
+font-size: 38px;
+font-family: 'Libre Baskerville', serif;
+//transform: scale(1.5,1.5);
+font-weight: 500;
+}
+
+.container .columns .item .item-texts .price {
+font-family:'AvenirLTW01-95BlackObli', sans-serif;
+color: #667c7e;
+font-weight: 700;
+font-size: 22x;
+user-select: none;
+}
+
+.container .columns .item .item-texts button {
+padding: 10px 20px;
+color: #667c7e;
+text-transform: uppercase;
+background-color: #fff;
+border: 1px solid #667c7e;
+font-family:'Avenir LT W01 65 Medium', sans-serif;
+font-size: 12px;
+cursor: pointer;
+user-select: none;
+}
+
+.container .columns .item .item-texts button:hover {
+opacity: .9;
+background-color: #667c7e;
+transition: .5s ease-in-out;
+border: 1px solid #fff;
+color: #fff;
+}
+
+.container .columns .item .item-texts p {
+font-family: 'Avenir LT W01 55 Roman', sans-serif;
+color: #667c7e;
+font-size: 16px;
+text-align: left;
+font-weight: 100;
+transform: scale(1,.9);
+word-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+body {
+overflow-x: hidden;
+}
+
+.firstnavbar-links {
+margin: 0;
+display: none;
+position: absolute;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+width: 100%;
+transition: transform 0.5s ease-in;
+transform: translateX(-100%);
+z-index: 5;
+justify-content: center;
+}
+
+.firstnavbar ul {
+padding:0;
+}
+
+.firstnavbar ul li {
+opacity: 0;
+}
+
+.firstnavbar-cel {
+display: block;
+position: relative;
+z-index: 5;
+padding: 15px;
+}
+
+.firstnavbar-cel-button {
+width: 25px;
+margin: 0px;
+cursor: pointer;
+}
+
+.firstnavbar-cel-button div {
+background-color: #034146;
+height: 4px;
+margin: 0px;
+transition: all .3s ease;
+}
+
+.firstnavbar-cel-button div:nth-child(2) {
+background-color: #fff;
+}
+
+.firstnavbar-cel-button div:nth-child(4) {
+background-color: #fff;
+}
+
+.container {
+display: block;
+justify-content: center;
+text-align: center;
+margin: 0px 40px 10px;
+}
+
+.columns {
+width: 100%;
+display: block;
+}
+
+.columns:first-child {
+width: 100%;
+}
+
+.item-texts {
+padding: 0px;
+}
+
+.container .columns .item .item-texts h1 {
+font-size: 28px;
+font-weight: 500;
+}
+
+.container .columns .item .item-texts .price {
+font-weight: 600;
+font-size: 16px;
+}
+
+.container .columns .item .item-texts button {
+padding: 5px 10px;
+font-size: 12px;
+cursor: pointer;
+}
+
+.container .columns .item .item-texts p {
+font-size: 14px;
+}
+}
+
+.firstnavbar-active {
+transform: translateX(0%);
+}
+
+@keyframes fadingNavCel {
+from{
+opacity: 0;
+transform: translateX(50px);
+}
+to{
+opacity: 1;
+transform: translateX(0px);
+}
+}
+
+.toggle .line1 {
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line3 {
+opacity: 0;
+}
+
+.toggle .line5 {
+transform: rotate(45deg) translate(-5px, -6px);
+}
