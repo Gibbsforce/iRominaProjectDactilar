@@ -57,10 +57,22 @@ body {
 .contact-form {
 	display: flex;
 	justify-content: center;
+	color: #000;
+	font-size: 14px;
+	font-family:'Avenir LT W01 65 Medium', sans-serif;
 }
 
 form {
 	width: 35%;
+	height: 100%;
+}
+
+form .left-content label {
+	padding: 4px 0;
+}
+
+form .full-name input, .contact-email input, .contact-subject input {
+	height: 20px;
 }
 
 .first-name, .last-name {
@@ -70,19 +82,85 @@ form {
 	width: 50%;
 }
 
+.first-name input, .subtitle-firstname {
+	margin: 0 15px 0 0;
+}
+
+.last-name input, .subtitle-lastname {
+	margin: 0 0 0 15px;
+}
+
+.subtitle-firstname, .subtitle-lastname {
+	font-size: 10px;
+}
+
 .full-name {
 	display: flex;
+	padding: 20px 0;
 }
 
 .contact-email, .contact-subject, .contact-message {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 20px 0;
 }
 .contact-submit {
 	display: flex;
 	justify-content: center;
 }
+
+.contact-submit input {
+	padding: 5px 10px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #000;
+	border: 1px solid #000;
+	font-family:'Avenir LT W01 65 Medium', sans-serif;
+	font-size: 12px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.first-name input {
+	background-color: rgba(1,1,1,.05);
+	border: 1px solid rgba(1,1,1,.5);
+}
+
+.last-name input {
+	background-color: rgba(1,1,1,.05);
+	border: 1px solid rgba(1,1,1,.5);
+}
+
+.contact-email input {
+	background-color: rgba(1,1,1,.05);
+	border: 1px solid rgba(1,1,1,.5);
+
+}
+
+.contact-subject input {
+	background-color: rgba(1,1,1,.05);
+	border: 1px solid rgba(1,1,1,.5);
+}
+
+.contact-message textarea {
+	resize: vertical;
+	height: 100px;
+	background-color: rgba(1,1,1,.05);
+}
+
+.contact-submit input {
+	transition: .5s ease-in-out;
+}
+
+.contact-submit input:hover {
+	opacity: .9;
+	background-color: #667c7e;
+	transition: .5s ease-in-out;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
 @media screen and (max-width: 768px) {
 	body {
 		/*overflow-x: hidden;*/
@@ -139,6 +217,10 @@ form {
 	.firstnavbar-cel-button div:nth-child(4) {
 		background-color: #fff;
 	}
+
+	form {
+	width: 70%;
+}
 }
 
 .firstnavbar-active {

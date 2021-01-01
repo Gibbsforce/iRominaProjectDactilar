@@ -20,7 +20,7 @@ tlalvaro15@gmail.com
 	<div class="firstnavbar">
 		<ul class="firstnavbar-links">
 			<li><a class="home" href="../index.html">home</a></li>
-			<li><a class="about" href="">about</a></li>
+			<li><a class="about" href="../about/about.html">about</a></li>
 			<li><a class="contact"href="">contact</a></li>
 			<li><a class="shop" href="../shop/shop.html">shop</a></li>
 		</ul>
@@ -49,14 +49,14 @@ tlalvaro15@gmail.com
 			<div class="full-name">
 
 				<div class="first-name">
-					Name
-					<input type="text" name="firstname">
-					First Name
+					<label class="name-sub" for="name">Name</label>
+					<input type="text" name="firstname" required>
+					<label class="subtitle-firstname" for="firstname">First Name</label>
 				</div>
 
 				<div class="last-name">
-					<br><input type="text" name="lastname">
-					Last Name<br>
+					<br><input type="text" name="lastname" required>
+					<label class="subtitle-lastname" for="lastname">Last Name</label>
 				</div>
 
 			</div>
@@ -64,23 +64,23 @@ tlalvaro15@gmail.com
 			<div class="left-content">
 
 				<div class="contact-email">
-					Email Adress<br>
-					<input type="email" name="email">
+					<label for="email-adress">Email Adress</label>
+					<input type="email" name="email" required>
 				</div>
 
 				<div class="contact-subject">
-					Subject<br>
-					<input type="text" name="subject">
+					<label for="subject">Subject</label>
+					<input type="text" name="subject" required>
 
 				</div>
 
 				<div class="contact-message">
-					Message<br>
-					<textarea type="text" name="message"></textarea>
+					<label for="message">Message</label>
+					<textarea type="text" name="message" required></textarea>
 				</div>
 
 				<div class="contact-submit">
-					<input type="submit">
+					<input type="submit" value="submit">
 				</div>
 
 			</div>
