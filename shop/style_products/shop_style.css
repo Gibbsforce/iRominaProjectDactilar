@@ -169,6 +169,30 @@ font-size: 22px;
 user-select: none;
 }
 
+.purchase-event {
+	display: flex;
+}
+
+.purchase-event input {
+	width: 20%;
+	margin: 0 10px;
+	color: #667c7e;
+	text-transform: uppercase;
+	background-color: #fff;
+	border: 1px solid #667c7e;
+	font-family:'Avenir LT W01 65 Medium', sans-serif;
+	font-size: 18px;
+	user-select: none;
+}
+
+.purchase-event input:hover {
+	opacity: .9;
+	background-color: #667c7e;
+	transition: .5s ease-in-out;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
 .container .columns .item .item-texts button {
 padding: 10px 20px;
 color: #667c7e;
