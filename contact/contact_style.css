@@ -57,9 +57,9 @@ body {
 .contact-form {
 	display: flex;
 	justify-content: center;
-	color: #000;
+	color: #667C7E;
 	font-size: 14px;
-	font-family:'Avenir LT W01 65 Medium', sans-serif;
+	font-family:'Avenir LT W01 55 Roman', sans-serif;
 }
 
 form {
@@ -111,42 +111,43 @@ form .full-name input, .contact-email input, .contact-subject input {
 }
 
 .contact-submit input {
+	font-family: 'AvenirLTW01-95BlackObli', sans-serif;
 	padding: 5px 10px;
 	color: #fff;
 	text-transform: uppercase;
-	background-color: #000;
-	border: 1px solid #000;
-	font-family:'Avenir LT W01 65 Medium', sans-serif;
+	background-color: #080B0E;
+	border: 1px solid #080B0E;
 	font-size: 12px;
 	cursor: pointer;
 	user-select: none;
 }
 
 .first-name input {
-	background-color: rgba(1,1,1,.05);
-	border: 1px solid rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.01);
+	border: 1px solid #879C9C;
 }
 
 .last-name input {
-	background-color: rgba(1,1,1,.05);
-	border: 1px solid rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.01);
+	border: 1px solid #879C9C;
 }
 
 .contact-email input {
-	background-color: rgba(1,1,1,.05);
-	border: 1px solid rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.01);
+	border: 1px solid #879C9C;
 
 }
 
 .contact-subject input {
-	background-color: rgba(1,1,1,.05);
-	border: 1px solid rgba(1,1,1,.5);
+	background-color: rgba(1,1,1,.01);
+	border: 1px solid #879C9C;
 }
 
 .contact-message textarea {
 	resize: vertical;
 	height: 100px;
-	background-color: rgba(1,1,1,.05);
+	background-color: rgba(1,1,1,.01);
+	border: 1px solid #879C9C;
 }
 
 .contact-submit input {
@@ -224,7 +225,7 @@ form .full-name input, .contact-email input, .contact-subject input {
 }
 
 .firstnavbar-active {
-transform: translateX(0%);
+	transform: translateX(0%);
 }
 
 @keyframes fadingNavCel {
