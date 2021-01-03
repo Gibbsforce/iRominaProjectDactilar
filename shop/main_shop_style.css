@@ -30,7 +30,7 @@ body {
 	font-family:'Avenir LT W01 65 Medium', sans-serif;
 	letter-spacing: 1.5px;
 	font-weight: 500;
-/*transition: ease-in-out .2s;*/
+	/*transition: ease-in-out .2s;*/
 }
 
 .firstnavbar ul li a.shop {
@@ -64,9 +64,6 @@ body {
 	text-transform: uppercase;
 	color: #034146;
 	font-size: 36px;
-
-	/*font-family:'Baskerville';*/
-
 	font-family: 'Libre Baskerville', serif;
 	transform: scale(1.25,1.5);
 
@@ -460,7 +457,7 @@ body {
 }
 
 .firstnavbar-active {
-transform: translateX(0%);
+	transform: translateX(0%);
 }
 
 @keyframes fadingNavCel {
