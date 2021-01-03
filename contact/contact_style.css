@@ -73,6 +73,7 @@ form .left-content label {
 
 form .full-name input, .contact-email input, .contact-subject input {
 	height: 20px;
+	outline: none;
 }
 
 .first-name, .last-name {
@@ -125,22 +126,25 @@ form .full-name input, .contact-email input, .contact-subject input {
 .first-name input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
+	border-radius: 4px;
 }
 
 .last-name input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
+	border-radius: 4px;
 }
 
 .contact-email input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
-
+	border-radius: 4px;
 }
 
 .contact-subject input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
+	border-radius: 4px;
 }
 
 .contact-message textarea {
@@ -148,10 +152,13 @@ form .full-name input, .contact-email input, .contact-subject input {
 	height: 100px;
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
+	outline: none;
+	border-radius: 4px;
 }
 
 .contact-submit input {
 	transition: .5s ease-in-out;
+	outline: none;
 }
 
 .contact-submit input:hover {
@@ -220,8 +227,8 @@ form .full-name input, .contact-email input, .contact-subject input {
 	}
 
 	form {
-	width: 70%;
-}
+		width: 70%;
+	}
 }
 
 .firstnavbar-active {
