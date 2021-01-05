@@ -91,7 +91,6 @@ body {
 }
 
 .action-lang ul li a {
-	pointer: cursor;
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
