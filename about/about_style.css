@@ -4,6 +4,43 @@ body {
 	background-color: #fff;
 }
 
+.action-lang {
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+}
+
+.action-lang ul {
+	text-align: center;
+	padding: 0;
+	text-align: right;
+	margin: 10px;
+}
+
+.action-lang ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.action-lang ul li a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	transform: scale(1,1.05);
+	color: rgba(1,1,1,.5);
+	font-size: 12px;
+	font-family:'Avenir LT W01 65 Medium', sans-serif;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+	/*transition: ease-in-out .2s;*/
+}
+
+.action-lang ul li a:hover {
+	color: rgba(209, 222, 219, 1);
+	transition: .2s;
+}
+
 .firstnavbar {
 	width: 100%;
 	user-select: none;
@@ -127,6 +164,10 @@ a.link-contact:hover {
 		transform: translateX(-100%);
 		z-index: 1;
 		justify-content: center;
+	}
+
+	.action-lang {
+		display: block;
 	}
 
 	.firstnavbar ul {
