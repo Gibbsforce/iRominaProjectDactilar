@@ -4,6 +4,10 @@ body {
 	background-color: #fff;
 }
 
+.select-language {
+	user-select: none;
+}
+
 .action-lang {
 	width: 100%;
 	display: inline-block;
@@ -163,25 +167,25 @@ form .full-name input, .contact-email input, .contact-subject input {
 .first-name input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 .last-name input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 .contact-email input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 .contact-subject input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 .contact-message textarea {
@@ -190,7 +194,7 @@ form .full-name input, .contact-email input, .contact-subject input {
 	background-color: rgba(1,1,1,.01);
 	border: 1px solid #879C9C;
 	outline: none;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 .contact-submit input {
@@ -209,6 +213,10 @@ form .full-name input, .contact-email input, .contact-subject input {
 @media screen and (max-width: 768px) {
 	body {
 		/*overflow-x: hidden;*/
+	}
+
+	.firstnavbar {
+		width: 50%;
 	}
 
 	.firstnavbar-links {

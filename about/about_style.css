@@ -4,6 +4,10 @@ body {
 	background-color: #fff;
 }
 
+.select-language {
+	user-select: none;
+}
+
 .action-lang {
 	width: 100%;
 	display: inline-block;
@@ -150,6 +154,10 @@ a.link-contact:hover {
 		/*overflow-x: hidden;*/
 	}
 
+	.firstnavbar {
+		width: 50%;
+	}
+
 	.firstnavbar-links {
 		margin: 0;
 		display: none;
@@ -166,10 +174,6 @@ a.link-contact:hover {
 		justify-content: center;
 	}
 
-	.action-lang {
-		display: block;
-	}
-
 	.firstnavbar ul {
 		padding: 0;
 	}
@@ -184,7 +188,7 @@ a.link-contact:hover {
 		z-index: 1;
 		padding: 15px;
 	}
-
+	
 	.firstnavbar-cel-button {
 		width: 25px;
 		margin: 0px;

@@ -5,6 +5,10 @@ body {
 	user-select: none;
 }
 
+.select-language {
+	user-select: none;
+}
+
 .action-lang {
 	width: 100%;
 	display: inline-block;
@@ -375,6 +379,10 @@ body {
 @media screen and (max-width: 768px) {
 	body {
 		//overflow-x: hidden;
+	}
+
+	.firstnavbar {
+		width: 50%;
 	}
 
 	.firstnavbar-links {
