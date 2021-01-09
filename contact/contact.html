@@ -118,16 +118,16 @@ tlalvaro15@gmail.com
     	    
     	    $to_email_own = 'hola@dactilar.com.pe';
     	    
-    	    $body_own = 'De: ' . ucfirst(strtolower(str_replace(" ", "", $_POST['firstname']))) ." ". 
-    	                        ucfirst(strtolower(str_replace(" ", "", $_POST['lastname']))) . "\r\n" .
+    	    $body_own = 'De: ' . ucwords(strtolower(trim($_POST['firstname']))) ." ". 
+    	                        ucwords(strtolower(trim($_POST['lastname']))) . "\r\n" .
     	                'Correo: ' . str_replace(" ", "", $_POST['email']) ."\r\n" .
-    	                'Asunto: ' . ucfirst(strtolower($_POST['subject'])) . "\r\n" .
-    	                'Contenido: ' . "\r\n" .
+    	                'Asunto: ' . ucfirst(strtolower(trim($_POST['subject'])) . "\r\n" .
+    	                'Contenido: ' . "\r\n" . "\r\n" .
     	                $_POST['message'];
     	    
     	    $headers_own .= 'From: ' . $_POST['email'];
     	    
-    	    mail($to_email_own, $_POST['subject'], $body_own, $headers_own);
+    	    mail($to_email_own, ucfirst(strtolower(trim($_POST['subject']))), $body_own, $headers_own);
     	    
     	    if($res == true) {
     	        

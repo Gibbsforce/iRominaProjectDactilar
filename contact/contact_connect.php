@@ -21,10 +21,10 @@
             $subject = $this->mysqli->real_escape_string($data['subject']);
             $message = $this->mysqli->real_escape_string($data['message']);
             
-            $first_name = ucfirst(strtolower(str_replace(" ", "", $first_name)));
-            $last_name = ucfirst(strtolower(str_replace(" ", "", $last_name)));
+            $first_name = ucwords(strtolower(trim($first_name)));
+            $last_name = ucwords(strtolower(trim($last_name)));
             $email = str_replace(" ", "", $email);
-            $subject = ucfirst(strtolower($subject));
+            $subject = ucfirst(strtolower(trim($subject)));
             
             $this->mysqli->set_charset("utf8");
 
