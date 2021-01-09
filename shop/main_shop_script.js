@@ -10,6 +10,7 @@ const scarves0 = document.querySelector("#scarves-web-0");
 const scarves1 = document.querySelector("#scarves-web-1");
 const scarves2 = document.querySelector("#scarves-web-2");
 const scarves3 = document.querySelector("#scarves-web-3");
+const scarves4 = document.querySelector("#scarves-web-4");
 const jewelryWeb = document.querySelector("#jewelry-web");
 
 function removeHats () {
@@ -25,6 +26,7 @@ function removeScarves () {
 	scarves1.style.display = "none";
 	scarves2.style.display = "none";
 	scarves3.style.display = "none";
+	scarves4.style.display = "none";
 
 };
 
@@ -47,6 +49,7 @@ function addScarves () {
 	scarves1.style.display = "block";
 	scarves2.style.display = "block";
 	scarves3.style.display = "block";
+	scarves4.style.display = "block";
 
 };
 
