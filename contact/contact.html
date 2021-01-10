@@ -60,12 +60,12 @@ tlalvaro15@gmail.com
 
 				<div class="first-name">
 					<label class="name-sub" for="name">Name*</label>
-					<input type="text" name="firstname" required>
+					<input type="text" name="firstname" maxlength="32" required>
 					<label class="subtitle-firstname" for="firstname">First Name</label>
 				</div>
 
 				<div class="last-name">
-					<br><input type="text" name="lastname" required>
+					<br><input type="text" name="lastname" maxlength="32" required>
 					<label class="subtitle-lastname" for="lastname">Last Name</label>
 				</div>
 
@@ -75,12 +75,12 @@ tlalvaro15@gmail.com
 
 				<div class="contact-email">
 					<label for="email-adress">Email Adress*</label>
-					<input type="email" name="email" required>
+					<input type="email" name="email" maxlength="128" required>
 				</div>
 
 				<div class="contact-subject">
 					<label for="subject">Subject*</label>
-					<input type="text" name="subject" required>
+					<input type="text" name="subject" maxlength="256" autocomplete="off" required>
 
 				</div>
 
@@ -97,14 +97,21 @@ tlalvaro15@gmail.com
 
 		</form>
 		
-        <!--<?php
+        <!--
+
+        <?php
 	
     	if(isset($_POST['submit'])){
     	    
+    	    //storing data to a mysql table
+    	    
     	    include_once 'contact_connect.php';
+    	    
     	    $obj = new Contact();
     	    
     	    $res = $obj->contact($_POST);
+    	    
+    	    //mailing to cantacter
     	    
     	    $to_email = str_replace(" ", "", $_POST['email']);
     	    
@@ -116,18 +123,22 @@ tlalvaro15@gmail.com
     	    
     	    mail($to_email, $_POST['subject'], $body, $headers);
     	    
+    	    //mailing to admin
+    	    
     	    $to_email_own = 'hola@dactilar.com.pe';
     	    
-    	    $body_own = 'De: ' . ucwords(strtolower(trim($_POST['firstname']))) ." ". 
+    	    $body_own = 'From: ' . ucwords(strtolower(trim($_POST['firstname']))) ." ". 
     	                        ucwords(strtolower(trim($_POST['lastname']))) . "\r\n" .
-    	                'Correo: ' . str_replace(" ", "", $_POST['email']) ."\r\n" .
-    	                'Asunto: ' . ucfirst(strtolower(trim($_POST['subject'])) . "\r\n" .
-    	                'Contenido: ' . "\r\n" . "\r\n" .
+    	                'Email: ' . str_replace(" ", "", $_POST['email']) ."\r\n" .
+    	                'Subject: ' . ucfirst(strtolower(trim($_POST['subject']))) . "\r\n" .
+    	                'Message Container: ' . "\r\n" . "\r\n" .
     	                $_POST['message'];
     	    
     	    $headers_own .= 'From: ' . $_POST['email'];
     	    
     	    mail($to_email_own, ucfirst(strtolower(trim($_POST['subject']))), $body_own, $headers_own);
+    	    
+    	    //checking
     	    
     	    if($res == true) {
     	        
@@ -139,7 +150,9 @@ tlalvaro15@gmail.com
     	        
     	    }
     	}
-    	?>-->
+    	?>
+
+    	-->
     	
 	</div>
 
