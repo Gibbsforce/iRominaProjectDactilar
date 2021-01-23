@@ -1,101 +1,133 @@
+//selecting items
+
 const all = document.querySelector("#all");
 const hats = document.querySelector("#hats");
 const scarves = document.querySelector("#scarves");
 const jewelry = document.querySelector("#jewelry");
 const readyToWear = document.querySelector("#ready-to-wear");
 
-const hatsWeb0 = document.querySelector("#hats-web-0");
-const hatsWeb1 = document.querySelector("#hats-web-1");
-const scarves0 = document.querySelector("#scarves-web-0");
-const scarves1 = document.querySelector("#scarves-web-1");
-const scarves2 = document.querySelector("#scarves-web-2");
-const scarves3 = document.querySelector("#scarves-web-3");
-const scarves4 = document.querySelector("#scarves-web-4");
-const jewelryWeb = document.querySelector("#jewelry-web");
+//defining objects per items
 
-function removeHats () {
+const theHats = document.querySelectorAll(".hats-web");
+const theScarves = document.querySelectorAll(".scarves-web");
+const theJewelry = document.querySelectorAll(".jewelry-web");
+const theWear = document.querySelectorAll(".ready-to-wear-web");
 
-	hatsWeb0.style.display = "none";
-	hatsWeb1.style.display = "none";
+const removeItems = () => {
 
-};
 
-function removeScarves () {
+	removeHats = () => {
 
-	scarves0.style.display = "none";
-	scarves1.style.display = "none";
-	scarves2.style.display = "none";
-	scarves3.style.display = "none";
-	scarves4.style.display = "none";
+		for (var i = 0; i < theHats.length; i++) {
+			theHats[i].style.display = "none";
+		};
 
-};
+	};
 
-function removeJewelryWeb () {
+	removeScarves = () => {
 
-	jewelryWeb.style.display = "none";
+		for (var i = 0; i < theScarves.length; i++) {
+			theScarves[i].style.display = "none";
+		};
 
-};
+	};
 
-function addHats () {
+	removeJewelryWeb = () => {
 
-	hatsWeb0.style.display = "block";
-	hatsWeb1.style.display = "block";
+		for (var i = 0; i < theJewelry.length; i++) {
+			theJewelry[i].style.display = "none";
+		};
 
-};
+	};
 
-function addScarves () {
+	removeWear = () => {
 
-	scarves0.style.display = "block";
-	scarves1.style.display = "block";
-	scarves2.style.display = "block";
-	scarves3.style.display = "block";
-	scarves4.style.display = "block";
+		for (var i = 0; i < theWear.length; i++) {
+			theWear[i].style.display = "none";
+		};
+
+	};
 
 };
 
-function addJewelryWeb () {
+const addItems = () => {
 
-	jewelryWeb.style.display = "block";
+
+	addHats = () => {
+
+		for (var i = 0; i < theHats.length; i++) {
+		theHats[i].style.display = "block";
+		};
+
+	};
+
+	addScarves = () => {
+
+		for (var i = 0; i < theScarves.length; i++) {
+			theScarves[i].style.display = "block";
+		};
+
+	};
+
+	addJewelryWeb = () => {
+
+		for (var i = 0; i < theJewelry.length; i++) {
+			theJewelry[i].style.display = "block";
+		};
+
+	};
+
+	addWear = () => {
+
+		for (var i = 0; i < theWear.length; i++) {
+			theWear[i].style.display = "none";
+		};
+
+	};
 
 };
 
-all.addEventListener("click", () => {
+const controlItems = () => {
 
-	addHats ();
-	addScarves ();
-	addJewelryWeb ();
+	all.addEventListener("click", () => {
 
-});
+		addItems(addHats(), addScarves(), addJewelryWeb(), addWear());
 
-hats.addEventListener("click", () => {
+	});
 
-	addHats ();
-	addJewelryWeb ();
-	removeJewelryWeb ();
-	addScarves ();
-	removeScarves ();
+	hats.addEventListener("click", () => {
 
-});
+		addItems(addHats(), addScarves(), addJewelryWeb());
+		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
+		addHats();
 
-scarves.addEventListener("click", () => {
+	});
 
-	addScarves ();
-	addHats ();
-	removeHats ();
-	addJewelryWeb ();
-	removeJewelryWeb ();
+	scarves.addEventListener("click", () => {
 
-});
+		addItems(addHats(), addScarves(), addJewelryWeb());
+		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
+		addScarves();
 
-jewelry.addEventListener("click", () => {
+	});
 
-	addJewelryWeb ();
-	addHats ();
-	removeHats ();
-	addScarves ();
-	removeScarves ();
+	jewelry.addEventListener("click", () => {
 
-});
+		addItems(addHats(), addScarves(), addJewelryWeb());
+		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
+		addJewelryWeb();
+
+	});
+
+	readyToWear.addEventListener("click", () => {
+
+		addItems(addHats(), addScarves(), addJewelryWeb());
+		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
+		addWear();
+
+	});
+
+};
 
 const firstNavBarCel = () => {
 
@@ -134,9 +166,12 @@ const categoryCel = document.querySelector(".category-cel");
 
 const shop = () => {
 
-	firstNavBarCel();
-	secondNavBarCel();
+	controlItems ();
+	removeItems ();
+	addItems ();
+	firstNavBarCel ();
+	secondNavBarCel ();
 
 }
 
-shop();
+shop ();
