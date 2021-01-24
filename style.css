@@ -8,6 +8,126 @@ body {
 	user-select: none;
 }
 
+.popup-subs {
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: visible;
+	opacity: 1;
+	z-index: 2;
+}
+
+.popup-container {
+	position: relative;
+	background-color: white;
+	height: 25%;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #294545;
+}
+
+.form-popup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-popup h1, p, input {
+	width: 100%;
+	height: 100%;
+}
+
+.popup-subs-active {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility .5s, opacity .5s;
+}
+
+.close-popup {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 25px;
+	color: black;
+}
+
+.close-popup {
+	font-family: 'Avenir LT W01 55 Roman', sans-serif;
+	color: #032932;
+}
+
+.close-popup:hover {
+	opacity: .5;
+	transition: ease .5s;
+}
+
+.email-popup {
+	padding: 0 2% 0 0px;
+	width: 50%;
+}
+
+.submit-popup {
+	padding: 0 0 0 2%;
+}
+
+.popup-container h1 {
+	font-family: 'Baskervville', serif;
+	color: #C27E53;
+	transform: scale(1.25, 1.5);
+	font-size: 32px;
+}
+
+.popup-container p {
+	font-family: 'Avenir LT W01 55 Roman', sans-serif;
+	color: #A2B6B3;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.email-popup input {
+	outline: none;
+	background-color: #667C7E;
+	border: 1px solid #032932;
+	color: #fff;
+	height: 25px;
+}
+
+input::placehoolder {
+	color: white;
+ }
+
+.submit-popup input {
+	outline: none;
+	font-family: 'AvenirLTW01-95BlackObli', sans-serif;
+	color: #fff;
+	background-color: #032932;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 5px;
+	border: 0;
+	height: 29px;
+	font-size: 12px;
+}
+
+.submit-popup input {
+	transition: .5s;
+}
+
+.submit-popup input:hover {
+	transition: .5s;
+	opacity: .7;
+}
+
 .background-video-container {
 	overflow: hidden;
 }
@@ -111,6 +231,10 @@ body {
 @media screen and (max-width: 768px) {
 	body {
 		padding: 10px 0px;
+	}
+	.popup-container {
+		width: 80%;
+		height: 40%;
 	}
 
 	.cover-logo img {

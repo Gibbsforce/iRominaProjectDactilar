@@ -125,13 +125,14 @@ body {
 	object-position: 50% 50%;
 }
 
-.item .item-image #second-image, #third-image {
+.item .item-image .display-image:not(:first-child) {
 	position: absolute;
-}
-
-.item .item-image #first-image, #second-image {
 	opacity: 0;
 }
+
+/*.item .item-image #first-image, #second-image {
+	opacity: 0;
+}*/
 
 .item-selector .item-image-selector {
 	display: flex;
@@ -139,7 +140,7 @@ body {
 	justify-content: center;
 }
 
-.item-selector .item-image-selector #first-image-selector, #second-image-selector, #third-image-selector {
+.item-selector .item-image-selector .image-selector/*#first-image-selector, #second-image-selector, #third-image-selector*/ {
 	padding: 10px 5px;
 }
 
@@ -211,7 +212,7 @@ body {
 }
 
 .purchase-event {
-	display: flex;
+	/*display: flex;*/
 }
 
 .purchase-event input {
@@ -233,6 +234,27 @@ body {
 	transition: .5s ease-in-out;
 	border: 1px solid #fff;
 	color: #fff;
+}
+
+/*defining sizes' style*/
+
+.sizes {
+	color: #667c7e;
+	border-bottom: 1px solid #667c7e;
+	border-top: 1px solid #667c7e;
+	font-family:'Avenir LT W01 65 Medium', sans-serif;
+	font-size: 12px;
+}
+
+.sizes ul {
+	padding: 0;
+	margin: 5px 0;
+}
+
+.sizes ul li {
+	list-style: none;
+	text-transform: uppercase;
+	user-select: none;
 }
 
 .container .columns .item .item-texts button {
@@ -361,6 +383,7 @@ body {
 		padding: 5px 10px;
 		font-size: 12px;
 		cursor: pointer;
+		margin: 0 0 5% 0;
 	}
 
 	.container .columns .item .item-texts p {

@@ -84,6 +84,7 @@ body {
 }
 
 .logo-clean {
+	height: 60px; /*adding because she said to remove the logo*/
 	background:#fff;
 	text-align: center;
 }
