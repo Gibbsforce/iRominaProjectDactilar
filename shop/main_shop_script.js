@@ -80,7 +80,7 @@ const addItems = () => {
 	addWear = () => {
 
 		for (var i = 0; i < theWear.length; i++) {
-			theWear[i].style.display = "none";
+			theWear[i].style.display = "block";
 		};
 
 	};
@@ -97,7 +97,7 @@ const controlItems = () => {
 
 	hats.addEventListener("click", () => {
 
-		addItems(addHats(), addScarves(), addJewelryWeb());
+		addItems(addHats(), addScarves(), addJewelryWeb(), addWear());
 		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
 		addHats();
 
@@ -105,7 +105,7 @@ const controlItems = () => {
 
 	scarves.addEventListener("click", () => {
 
-		addItems(addHats(), addScarves(), addJewelryWeb());
+		addItems(addHats(), addScarves(), addJewelryWeb(), addWear());
 		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
 		addScarves();
 
@@ -113,7 +113,7 @@ const controlItems = () => {
 
 	jewelry.addEventListener("click", () => {
 
-		addItems(addHats(), addScarves(), addJewelryWeb());
+		addItems(addHats(), addScarves(), addJewelryWeb(), addWear());
 		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
 		addJewelryWeb();
 
@@ -121,7 +121,7 @@ const controlItems = () => {
 
 	readyToWear.addEventListener("click", () => {
 
-		addItems(addHats(), addScarves(), addJewelryWeb());
+		addItems(addHats(), addScarves(), addJewelryWeb(), addWear());
 		removeItems(removeHats(), removeScarves(), removeJewelryWeb(), removeWear());
 		addWear();
 
