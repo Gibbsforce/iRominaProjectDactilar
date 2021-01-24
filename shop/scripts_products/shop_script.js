@@ -14,6 +14,7 @@ for (let i = 0; i < shortcutImage.length; i++) {
 
 			displayImage[k].style.opacity = "0";
 			displayImage[k].style.zIndex = "0";
+			shortcutImage[k].style.opacity = "1";
 
 		};
 
@@ -21,6 +22,7 @@ for (let i = 0; i < shortcutImage.length; i++) {
 
 		displayImage[i].style.opacity = "1";
 		displayImage[i].style.zIndex = "4";
+		shortcutImage[i].style.opacity = "1";
 
 	});
 };
