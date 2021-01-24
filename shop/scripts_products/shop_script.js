@@ -22,7 +22,7 @@ for (let i = 0; i < shortcutImage.length; i++) {
 
 		displayImage[i].style.opacity = "1";
 		displayImage[i].style.zIndex = "4";
-		shortcutImage[i].style.opacity = "1";
+		shortcutImage[i].style.opacity = ".5";
 
 	});
 };
