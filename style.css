@@ -20,7 +20,7 @@ body {
 	justify-content: center;
 	visibility: visible;
 	opacity: 1;
-	z-index: 2;
+	z-index: 3;
 }
 
 .popup-container {
@@ -154,6 +154,7 @@ body {
 .cover-logo img {
 	width: 20%;
 	height: 20%;
+        z-index: 2;
 }
 
 .firstnavbar {
