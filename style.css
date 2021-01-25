@@ -154,6 +154,7 @@ body {
 .cover-logo img {
 	width: 20%;
 	height: 20%;
+        z-index: 3;
 }
 
 .firstnavbar {
