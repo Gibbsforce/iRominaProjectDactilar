@@ -89,7 +89,7 @@ body {
 }
 
 .email-popup {
-	padding: 0 3% 0 0px;
+	padding: 0 3% 0 0;
 	width: 50%;
 }
 
@@ -255,14 +255,28 @@ body {
 		padding: 10px 0px;
 	}
 	.popup-container {
-		width: 80%;
-		height: 40%;
+		width: 70%;
+		height: 35%;
 	}
 
 	.popup-container h1 {
 	font-size: 26px;
 	padding: 0 20%;
 	line-height: 80%;
+	}
+
+	.popup-container p {
+	font-size: 14px;
+	}
+
+	.email-popup {
+		padding: 0 12px 0 0;
+		width: 45%;
+	}
+
+	.submit-popup {
+		padding: 0 0 0 12px;
+		width: 30%;
 	}
 
 	.cover-logo img {
