@@ -15,7 +15,6 @@ const theWear = document.querySelectorAll(".ready-to-wear-web");
 
 const removeItems = () => {
 
-
 	removeHats = () => {
 
 		for (var i = 0; i < theHats.length; i++) {
@@ -51,7 +50,6 @@ const removeItems = () => {
 };
 
 const addItems = () => {
-
 
 	addHats = () => {
 
@@ -148,21 +146,30 @@ const firstNavBarCel = () => {
 			}
 		});
 
-		firstNavBarCelButton.classList.toggle("toggle");	
+		firstNavBarCelButton.classList.toggle("toggle");
+
+		//testing fixed on content first navbar list
+
+		firstNavBarLinks.classList.add("fixed-active");
+		firstNavBarCelButton.classList.toggle("fixed-active");
+
+		//end testing fixed on content first navbar list
+
 	});
+
 }
 
 const secondNavBarCel = () => {
 
-const category = document.querySelector(".category");
-const categoryCel = document.querySelector(".category-cel");
+	const category = document.querySelector(".category");
+	const categoryCel = document.querySelector(".category-cel");
 
 	category.addEventListener("click", () => {
 
 		categoryCel.classList.toggle("category-cel-active");
 
 	});
-}
+};
 
 const shop = () => {
 
