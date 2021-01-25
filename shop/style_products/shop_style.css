@@ -239,9 +239,11 @@ body {
 /*defining sizes' style*/
 
 .sizes {
+	margin-top: 40px;
+	margin-bottom: 40px;
 	color: #667c7e;
-	border-bottom: 1px solid #667c7e;
-	border-top: 1px solid #667c7e;
+	border-bottom: 1px solid rgba(102, 124, 126, .5);
+	border-top: 1px solid rgba(102, 124, 126, .5);
 	font-family:'Avenir LT W01 65 Medium', sans-serif;
 	font-size: 12px;
 }
@@ -256,6 +258,8 @@ body {
 	text-transform: uppercase;
 	user-select: none;
 }
+
+/*ending sizes' style*/
 
 .container .columns .item .item-texts button {
 	padding: 10px 20px;
@@ -348,6 +352,14 @@ body {
 	.firstnavbar-cel-button div:nth-child(4) {
 		background-color: #fff;
 	}
+
+	/*testing fixed on content first navbar list*/
+
+	.fixed-active {
+		position: fixed;
+	}
+	
+	/*end testing fixed on content first navbar list*/
 
 	.container {
 		display: block;

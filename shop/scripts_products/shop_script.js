@@ -2,13 +2,14 @@
 
 const shortcutImage = document.querySelectorAll(".image-selector");
 const displayImage = document.querySelectorAll(".display-image");
-	
-for (let i = 0; i < shortcutImage.length; i++) {
+
+const imageSelector = () => {
+
+	for (let i = 0; i < shortcutImage.length; i++) {
 
 	shortcutImage[i].addEventListener("click", () => {
 
-
-		for(let k = 0; k < displayImage.length; k++){
+		for (var k = 0; k < displayImage.length; k++){
 
 			//console.log(k);
 
@@ -24,9 +25,11 @@ for (let i = 0; i < shortcutImage.length; i++) {
 		displayImage[i].style.zIndex = "4";
 		shortcutImage[i].style.opacity = ".5";
 
-	});
-};
+		});
+	};
 
+};
+	
 const firstNavBarCel = () => {
 
 	const firstNavBarCelButton = document.querySelector(".firstnavbar-cel-button");
@@ -45,11 +48,26 @@ const firstNavBarCel = () => {
 				link.style.animation = `fadingNavCel 0.5s ease forwards ${index / 7 + 0.5}s`;
 			}
 		});
-		firstNavBarCelButton.classList.toggle("toggle");	
+		firstNavBarCelButton.classList.toggle("toggle");
+
+		//testing fixed on content first navbar list
+
+		firstNavBarLinks.classList.add("fixed-active");
+		firstNavBarCelButton.classList.toggle("fixed-active");
+
+		//end testing fixed on content first navbar list
+		
 	});
 }
 
-firstNavBarCel();
+const shopProducts = () => {
+
+	imageSelector();
+	firstNavBarCel();
+
+};
+
+shopProducts();
 
 /*const slide = document.querySelector('.item-image');
 const slideImages = document.querySelectorAll('.item-image img');

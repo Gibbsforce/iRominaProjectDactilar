@@ -230,6 +230,14 @@ body {
 		background-color: #fff;
 	}
 
+	/*testing fixed on content first navbar list*/
+
+	.fixed-active {
+		position: fixed;
+	}
+	
+	/*end testing fixed on content first navbar list*/
+
 	.container {
 		display: block;
 		justify-content: center;

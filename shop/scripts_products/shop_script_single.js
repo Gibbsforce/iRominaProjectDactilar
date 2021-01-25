@@ -16,7 +16,15 @@ const firstNavBarCel = () => {
 				link.style.animation = `fadingNavCel 0.5s ease forwards ${index / 7 + 0.5}s`;
 			}
 		});
-		firstNavBarCelButton.classList.toggle("toggle");	
+		firstNavBarCelButton.classList.toggle("toggle");
+
+		//testing fixed on content first navbar list
+
+		firstNavBarLinks.classList.add("fixed-active");
+		firstNavBarCelButton.classList.toggle("fixed-active");
+
+		//end testing fixed on content first navbar list
+		
 	});
 }
 
