@@ -4,6 +4,8 @@ body {
 	background-color: #fff;
 }
 
+/*setting language es en*/
+
 .select-language {
 	user-select: none;
 }
@@ -45,6 +47,12 @@ body {
 	transition: .2s;
 }
 
+/*end setting language es en*/
+
+/*---------------------------------------------------------*/
+
+/*navbar*/
+
 .firstnavbar {
 	width: 100%;
 	user-select: none;
@@ -66,12 +74,17 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	transform: scale(1,1.05);
-	color: #000;
+	/*color: #000;*/
 	font-size: 14px;
 	font-family:'Avenir LT W01 65 Medium', sans-serif;
 	letter-spacing: 1.5px;
-	font-weight: 500;
+	/*font-weight: 500;*/
 	/*transition: ease-in-out .2s;*/
+
+	/*new changes date: 01-26-2021*/
+	font-weight: 700;
+	color: #034146;
+	/*end new changes date: 01-26-2021*/
 }
 
 .firstnavbar ul li a.about {
@@ -83,6 +96,12 @@ body {
 	transition: .2s;
 }
 
+/*end navbar*/
+
+/*---------------------------------------------------------*/
+
+/*dactilar font logo*/
+
 .dactilar-font {
 	background:#fff;
 	text-align: center;
@@ -92,28 +111,104 @@ body {
 	max-width: 100%;
 	width: 288.25px;
 	height: 85.75px;
+	margin-top: 20px;
 }
 
-.about-background-picture {
-	background:#fff;
-	text-align: center;
-	padding: 40px 20px 20px 20px;
+.dactilar-font-mobile {
+	display: none;
 }
 
-.about-background-picture img {
+/*end dactilar font logo*/
+
+/*---------------------------------------------------------*/
+
+/*greetings about dactilar*/
+
+.about-greetings h1 {
+	font-family: 'Baskervville', serif;
+	padding-left: 180px;
+	color: #034146;
+	margin: 0;
+	font-size: 32px;
+}
+
+.about-greetings p {
+	font-family: 'Avenir LT W01 55 Roman', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 180px;
+	transform: scale(1,1);
+	color: rgba(0,0,0,.8);
+	letter-spacing: 1px;
+	margin-top: 0;
+}
+
+/*end greetings about dactilar*/
+
+/*---------------------------------------------------------*/
+
+/*background images about*/
+
+.about-background-slider {
+	overflow: hidden;
+	height: 506.5px;
+	width: 900px;
+	margin: auto;
+}
+
+@-webkit-keyframes slide-animation {
+	0% {left: 0px;}
+	10% {left: 0px;}
+	20% {left: 900px;}
+	30% {left: 900px;}
+	40% {left: 1800px;}
+	50% {left: 1800px;}
+	60% {left: 900px;}
+	70% {left: 900px;}
+	80% {left: 0px;}
+	90% {left: 0px;}
+	100% {left: 0px;}
+}
+
+.about-background-slider-pictures {
+	width: 2700px;
+	margin: 0 0 0 -1800px;
+	position: relative;
+	-webkit-animation-name: slide-animation;
+	-webkit-animation-duration: 21s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+
+
+.about-background-pictures {
+	width: 900px;
+	position: relative;
+	float: left;
+}
+
+.about-background-pictures img {
 	max-width: 100%;
+	max-height: 100%;
+
+	/*
+	object-fit: fill;
+	object-position: 50% 50%;
+	*/
+
+	/*just gotta figure this out why this is not working damn*/
+
 }
 
-.logo-clean {
-	background:#fff;
-	text-align: center;
-}
+/*end background images about*/
 
-.logo-clean img {
-	max-width: 100%;
-	height: 10%;
-	width: 10%;
-	padding: 20px;
+/*---------------------------------------------------------*/
+
+/*texts content about*/
+
+.about-message {
+	margin-top: 30px;
 }
 
 .about-message p {
@@ -139,16 +234,89 @@ a.link-contact:hover {
 	transition: .2s;
 }
 
-@media screen and (max-width: 1020px) {
-	.gallery-item .text-title-item {
-		font-size: 24px;
-	}
+/*end texts content about*/
 
-	.gallery-item .text-description-items {
-		font-size: 20px;
-	}
+/*---------------------------------------------------------*/
 
+/*initializing about footer*/
+
+footer {
+	padding: 0 180px;
 }
+
+/*logo dactilar about*/
+
+.logo-clean {
+	background:#fff;
+	text-align: center;
+}
+
+.logo-clean img {
+	max-width: 100%;
+	height: 10%;
+	width: 10%;
+	padding: 20px;
+}
+
+/*end logo dactilar about*/
+
+/*about-instagram checking*/
+
+.about-instagram-checking h1 {
+	font-family: 'Baskervville', serif;
+	color: #034146;
+	margin: 0;
+	font-size: 32px;
+}
+
+/*end about-instagram checking*/
+
+/*about gallery instagram container*/
+
+.full-container-instagram {
+	margin: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0px;
+	text-align: center;
+}
+
+.container-instagram {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-auto-rows: repeat(1,1fr); /*350px 350px;*/
+	grid-gap: 20px;
+	grid-auto-flow: dense;
+}
+
+.gallery-item-instagram {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.gallery-item-instagram .image-instagram {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.gallery-item-instagram .image-instagram img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	object-position: 50% 50%;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+
+.gallery-item-instagram:hover .image-instagram img {
+	opacity: 0.2;
+}
+
+/*end about gallery instagram container*/
+
+/*end about footer*/
 
 @media screen and (max-width: 768px) {
 	body {
@@ -183,13 +351,15 @@ a.link-contact:hover {
 		opacity: 0;
 	}
 
+	/*navbar for mobiles*/
+
 	.firstnavbar-cel {
 		display: block;
 		position: relative;
 		z-index: 1;
 		padding: 15px;
 	}
-	
+
 	.firstnavbar-cel-button {
 		width: 25px;
 		margin: 0px;
@@ -211,21 +381,129 @@ a.link-contact:hover {
 		background-color: #fff;
 	}
 
-	.logo ul li a {
-		font-size: 18px;
+	/*end navbar for mobiles*/
+
+	/*---------------------------------------------------------*/
+
+	/*fixed on content first navbar list*/
+
+	.fixed-active {
+		position: fixed;
+	}
+	
+	/*end fixed on content first navbar list*/
+
+	/*---------------------------------------------------------*/
+
+	/*greetings about dactilar for mobiles*/
+
+	.about-greetings h1 {
+		font-size: 24px;
+		padding: 0 20px;
 	}
 
-	.motto-image img {
-		max-width: 100%;
-		width: 400px;
-		height: 35px;
+	.about-greetings p {
+		font-size: 16px;
+		padding: 0 20px;
 	}
+
+	/*end greetings about dactilar for mobiles*/
+
+	/*---------------------------------------------------------*/
+
+	/*background images about for mobiles*/
+
+	.about-background-slider {
+		height: 202.5px;
+		width: 360px;
+	}
+
+	@-webkit-keyframes slide-animation {
+		0% {left: 0px;}
+		10% {left: 0px;}
+		20% {left: 360px;}
+		30% {left: 360px;}
+		40% {left: 720px;}
+		50% {left: 720px;}
+		60% {left: 360px;}
+		70% {left: 360px;}
+		80% {left: 0px;}
+		90% {left: 0px;}
+		100% {left: 0px;}
+	}
+
+	.about-background-slider-pictures {
+		width: 1080px;
+		margin: 0 0 0 -720px;
+	}
+
+	.about-background-pictures {
+		width: 360px;
+	}
+
+	.about-background-pictures img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	/*end background images about for mobiles*/
+
+	/*---------------------------------------------------------*/
+
+	/*dactilar font logo for mobiles*/
+
+	.dactilar-font {
+		display: none;
+	}
+
+	.dactilar-font-mobile {
+		display: block;
+		background:#fff;
+		text-align: center;
+	}
+
+	.dactilar-font-mobile img {
+		max-width: 100%;
+		width: 288.25px;
+		height: 85.75px;
+		margin-top: 20px;
+	}
+
+	/*end dactilar font logo for mobiles*/
 
 	.about-message p {
 		font-size: 16px;
 		padding: 0px 20px;
 	}
+
+	/*initializing about footer*/
+
+	footer {
+		padding: 0 20px;
+	}
+
+	/*logo dactilar about*/
+
+	.logo-clean {
+	}
+
+	.logo-clean img {
+	}
+
+	/*end logo dactilar about*/
+
+	/*about-instagram checking*/
+
+	.about-instagram-checking h1 {
+		font-size: 24px;
+	}
+
+	/*end about-instagram checking*/
+
+	/*end about footer*/
 }
+
+/*navbar for mobiles*/
 
 .firstnavbar-active {
 	transform: translateX(0%);
@@ -253,3 +531,5 @@ a.link-contact:hover {
 .toggle .line5 {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/*end navbar for mobiles*/
