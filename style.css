@@ -75,10 +75,6 @@ body {
 	font-weight: bold;
 	cursor: pointer;
 	font-size: 25px;
-	color: black;
-}
-
-.close-popup {
 	font-family: 'Avenir LT W01 55 Roman', sans-serif;
 	color: #032932;
 }
@@ -150,6 +146,10 @@ body {
 
 /*end popup subscription*/
 
+/*---------------------------------------------------------*/
+
+/*video background home page*/
+
 .background-video-container {
 	overflow: hidden;
 }
@@ -165,6 +165,12 @@ body {
 	height: 100%;
 }
 
+/*end video background home page*/
+
+/*---------------------------------------------------------*/
+
+/*logo dactilar home page*/
+
 .cover-logo {
 	max-width: 100%;
 	justify-content: center;
@@ -175,6 +181,12 @@ body {
 	width: 20%;
 	height: 20%;
 }
+
+/*end logo dactilar home page*/
+
+/*---------------------------------------------------------*/
+
+/*navbar*/
 
 .firstnavbar {
 	width: 100%;
@@ -214,6 +226,12 @@ body {
 	transition: .2s;
 }
 
+/*end navbar*/
+
+/*---------------------------------------------------------*/
+
+/*setting language es en*/
+
 .action-lang {
 	width: 100%;
 	display: inline-block;
@@ -250,23 +268,28 @@ body {
 	transition: .2s;
 }
 
+/*end setting language es en*/
+
 @media screen and (max-width: 768px) {
 	body {
 		padding: 10px 0px;
 	}
+
+	/*popup subscription mobile*/
+
 	.popup-container {
 		width: 70%;
-		height: 35%;
+		height: 37.5%;
 	}
 
 	.popup-container h1 {
-	font-size: 26px;
-	padding: 0 20%;
-	line-height: 80%;
+		font-size: 24px;
+		padding: 0 20%;
+		line-height: 90%;
 	}
 
 	.popup-container p {
-	font-size: 14px;
+		font-size: 14px;
 	}
 
 	.email-popup {
@@ -278,6 +301,12 @@ body {
 		padding: 0 0 0 12px;
 		width: 30%;
 	}
+
+	.close-popup {
+		font-size: 20px;
+	}
+
+	/*end popup subscription mobile*/
 
 	.cover-logo img {
 		width: 30%;
