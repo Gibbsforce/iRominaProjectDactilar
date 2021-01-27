@@ -1,3 +1,5 @@
+// general first navbar
+
 const firstNavBarCel = () => {
 
 	const firstNavBarCelButton = document.querySelector(".firstnavbar-cel-button");
@@ -28,36 +30,36 @@ const firstNavBarCel = () => {
 	});
 }
 
-firstNavBarCel();
+// slider for about page
 
 const backgoundAboutSlider = () => {
 
     	var slides = document.querySelectorAll('.about-background-pictures');
-    	var btns = document.querySelectorAll('.about-background-navigation-button');
+    	var buttons = document.querySelectorAll('.about-background-navigation-button');
 
     	let currentSlide = 1;
 
-    	// Javascript for image slider manual navigation
+    	// manual slider
 
-    	var manualNav = function(manual){
+    	var manualNav = (manual) => {
 
     		slides.forEach((slide) => {
 
     			slide.classList.remove('active');
 
-    			btns.forEach((btn) => {
-    				btn.classList.remove('active');
+    			buttons.forEach((button) => {
+    				button.classList.remove('active');
     			});
     		});
 
     		slides[manual].classList.add('active');
-    		btns[manual].classList.add('active');
+    		buttons[manual].classList.add('active');
 
     	}
 
-    	btns.forEach((btn, i) => {
+    	buttons.forEach((button, i) => {
 
-    		btn.addEventListener("click", () => {
+    		button.addEventListener("click", () => {
 
     			manualNav(i);
     			currentSlide = i;
@@ -65,9 +67,9 @@ const backgoundAboutSlider = () => {
     		});
     	});
 
-    	// Javascript for image slider autoplay navigation
+    	// automatic slider
 
-    	var repeat = function(activeClass){
+    	var repeat = (/*activeClass*/) => {
 
     		let active = document.getElementsByClassName('active');
     		let i = 1;
@@ -83,7 +85,7 @@ const backgoundAboutSlider = () => {
     				});
 
     				slides[i].classList.add('active');
-    				btns[i].classList.add('active');
+    				buttons[i].classList.add('active');
     				i++;
 
     				if(slides.length == i){
@@ -93,12 +95,33 @@ const backgoundAboutSlider = () => {
     				if(i >= slides.length){
     					return;
     				}
+
     				repeater();
+
     			}, 3000);
     		}
+
     		repeater();
     	}
+
     	repeat();
 };
 
-backgoundAboutSlider ();
+const centerLastText = () => {
+
+    const aboutMessageText = document.querySelector(".about-message-text")
+
+    aboutMessageText.style.textAlignLast = "center";
+    aboutMessageText.style.MozTextAlignLast = "center";
+
+};
+
+const about = () => {
+
+    firstNavBarCel();
+    backgoundAboutSlider ();
+    centerLastText ();
+
+};
+
+about ();
