@@ -110,8 +110,9 @@ body {
 .dactilar-font img {
 	max-width: 100%;
 	width: 288.25px;
-	height: 85.75px;
-	margin-top: 20px;
+	height: 162.12px;
+	margin-top: 10px;
+	margin-bottom: -50px;
 }
 
 .dactilar-font-mobile {
@@ -138,7 +139,7 @@ body {
 	text-align: left;
 	padding-left: 180px;
 	transform: scale(1,1);
-	color: rgba(0,0,0,.8);
+	color: rgba(0,0,0,.5);
 	letter-spacing: 1px;
 	margin-top: 0;
 }
@@ -148,6 +149,10 @@ body {
 /*---------------------------------------------------------*/
 
 /*background images about*/
+
+/*automatic slider v1.1 without buttons*/
+
+/*
 
 .about-background-slider {
 	overflow: hidden;
@@ -193,13 +198,100 @@ body {
 	max-height: 100%;
 
 	/*
+
 	object-fit: fill;
 	object-position: 50% 50%;
-	*/
 
-	/*just gotta figure this out why this is not working damn*/
+	*/ /*just gotta figure this out why this is not working damn*/
+/*}*/
 
+/*end automatic slider v1.1 without buttons*/
+
+/*background images about automatic slider v2.1 with buttons*/
+
+.about-background-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.about-background-slider-pictures {
+	position: relative;
+	width: 900px;
+	height: 506.5px;
+	margin: 10px;
+}
+
+.about-background-slider-pictures .about-background-pictures {
+	z-index: 1;
+  	position: absolute;
+ 	width: 100%;
+  	clip-path: circle(0% at 0 50%); /*gotta figure this out*/
+}
+
+.about-background-slider-pictures .about-background-pictures.active {
+	clip-path: circle(150% at 0 50%); /*gotta figure this out*/
+	/*transition: 1.5s;*/
+	transition-property: clip-path;
+}
+
+.about-background-slider-pictures .about-background-pictures img {
+	z-index: 1;
+	width: 100%;
+	height: 506.5px;
+}
+
+.about-background-slider-pictures .about-background-navigation {
+	z-index: 2;
+	position: absolute;
+	display: flex;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.about-background-slider-pictures .about-background-navigation .about-background-navigation-button {
+	background: rgba(0, 0, 0, .5);
+	width: 12px;
+	height: 12px;
+	margin: 30px 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.about-background-slider-pictures .about-background-navigation .about-background-navigation-button.active {
+	background: #034146;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* in case to add info to a slide for styling
+
+.about-background-slider-pictures .about-background-pictures .info{
+	position: absolute;
+	top: 0;
+	padding: 15px 30px;
+  }
+
+.about-background-slider-pictures .about-background-pictures .info h2{
+	color: #fff;
+	font-size: 45px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px;
+  }
+
+.about-background-slider-pictures .about-background-pictures .info p{
+	color: #fff;
+	background: rgba(0, 0, 0, 0.1);
+	font-size: 16px;
+	width: 60%;
+	padding: 10px;
+	border-radius: 4px;
+  }
+
+*/
+
+/*end background images about automatic slider v2.1 with buttons*/
 
 /*end background images about*/
 
@@ -209,23 +301,27 @@ body {
 
 .about-message {
 	margin-top: 30px;
+	width: 100%;
 }
 
 .about-message p {
-	padding: 0px 180px;
+	padding: 25px  180px 0;
 	font-family: 'Avenir LT W01 55 Roman', sans-serif;
 	color: #000;
 	font-size: 16px;
-	text-align: center;
+
+	text-align: justify;
+	text-align-last: center;
+
 	transform: scale(1,1);
-	color: rgba(0,0,0,.8);
+	color: rgba(0,0,0,.5);
 	letter-spacing: 1px;
 }
 
 a.link-contact {
 	display: block;
 	text-decoration: none;
-	color: rgba(0,0,0,.6);
+	color: rgba(0,0,0,.4);
 	margin: 0px;
 }
 
@@ -253,9 +349,9 @@ footer {
 
 .logo-clean img {
 	max-width: 100%;
-	height: 10%;
-	width: 10%;
-	padding: 20px;
+	height: 40%;
+	width: 33.5%;
+	padding: 2px;
 }
 
 /*end logo dactilar about*/
@@ -339,7 +435,7 @@ footer {
 		width: 100%;
 		transition: transform 0.5s ease-in;
 		transform: translateX(-100%);
-		z-index: 1;
+		z-index: 3;
 		justify-content: center;
 	}
 
@@ -356,7 +452,7 @@ footer {
 	.firstnavbar-cel {
 		display: block;
 		position: relative;
-		z-index: 1;
+		z-index: 3;
 		padding: 15px;
 	}
 
@@ -403,7 +499,7 @@ footer {
 	}
 
 	.about-greetings p {
-		font-size: 16px;
+		font-size: 12px;
 		padding: 0 20px;
 	}
 
@@ -412,6 +508,10 @@ footer {
 	/*---------------------------------------------------------*/
 
 	/*background images about for mobiles*/
+
+	/*automatic slider v1.1 without buttons for mobiles*/
+
+	/*
 
 	.about-background-slider {
 		height: 202.5px;
@@ -446,6 +546,33 @@ footer {
 		max-height: 100%;
 	}
 
+	*/
+
+	/*end automatic slider v1.1 without buttons for mobiles*/
+
+	/*background images about automatic slider v2.1 with buttons*/
+
+	.about-background-slider-pictures {
+		width: 360px;
+		height: 202.5px;
+	}
+
+	.about-background-slider-pictures .about-background-pictures img {
+		height: 202.5px;
+	}
+
+	.about-background-slider-pictures .about-background-navigation {
+		top: 100%;
+	}
+
+	.about-background-slider-pictures .about-background-navigation .about-background-navigation-button {
+		width: 10px;
+		height: 10px;
+		margin: 10px 4px;
+	}
+
+	/*end background images about automatic slider v2.1 with buttons*/
+
 	/*end background images about for mobiles*/
 
 	/*---------------------------------------------------------*/
@@ -464,19 +591,19 @@ footer {
 
 	.dactilar-font-mobile img {
 		max-width: 100%;
-		width: 288.25px;
-		height: 85.75px;
-		margin-top: 20px;
+		width: 200px;
+		height: 112.5px;
+		margin-top: -50px;
 	}
 
 	/*end dactilar font logo for mobiles*/
 
 	.about-message p {
-		font-size: 16px;
+		font-size: 12px;
 		padding: 0px 20px;
 	}
 
-	/*initializing about footer*/
+	/*initializing about footer for mobiles*/
 
 	footer {
 		padding: 0 20px;
@@ -500,7 +627,7 @@ footer {
 
 	/*end about-instagram checking*/
 
-	/*end about footer*/
+	/*end about footer for mobiles*/
 }
 
 /*navbar for mobiles*/
