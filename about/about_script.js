@@ -98,7 +98,7 @@ const backgoundAboutSlider = () => {
 
     				repeater();
 
-    			}, 3000);
+    			}, 2500);
     		}
 
     		repeater();
