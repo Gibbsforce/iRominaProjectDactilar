@@ -2,6 +2,13 @@ body {
 	margin: auto 0;
 	padding: 0;
 	background-color: #fff;
+
+	/*
+	background-image: url("../media/contact_background_pictures/contact_background_picture.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	*/
+
 }
 
 /*background picture contact*/
@@ -11,7 +18,7 @@ body {
 }
 
 .contact-background-picture img {
-	position: absolute;
+	position: fixed; /*it was absoulte, changed to fixed in order to fill full screen*/
 	z-index: -1;
 	object-fit: fill;
 	top: 0;
@@ -161,11 +168,23 @@ body {
 	font-size: 14px;
 	font-family:'Avenir LT W01 55 Roman', sans-serif;
 	font-weight: bold;
+
+	text-shadow: -1px 0 #034146,
+				  0 1px #034146,
+				  1px 0 #034146,
+				 0 -1px #034146;
+	/*-webkit-text-stroke: 0.2px #034146;*/
 }
 
 form {
 	width: 35%;
 	height: 100%;
+}
+
+.full-name input, .contact-email input, .contact-subject input, textarea {
+	color: #034146;
+	font-weight: bold;
+	font-family: 'Avenir LT W01 55 Roman', sans-serif;
 }
 
 form .left-content label {
@@ -214,12 +233,12 @@ form .full-name input, .contact-email input, .contact-subject input {
 
 .contact-submit input {
 	font-family: 'AvenirLTW01-95BlackObli', sans-serif;
-	padding: 5px 10px;
+	padding: 10px 15px;
 	color: #fff;
 	text-transform: uppercase;
 	background-color: #034146;
 	border: 1px solid #034146;
-	font-size: 12px;
+	font-size: 14px;
 	cursor: pointer;
 	user-select: none;
 }
@@ -258,6 +277,18 @@ form .full-name input, .contact-email input, .contact-subject input {
 	body {
 		/*overflow-x: hidden;*/
 	}
+
+	/*background image contact for mobiles and fixed to full screen*/
+
+	.contact-background-picture img {
+		/*height: 150vh;*/
+	}
+
+	/*end background image contact for mobiles and fixed to full screen*/
+
+	/*---------------------------------------------------------*/
+
+	/*navbar for mobiles*/
 
 	.firstnavbar {
 		width: 50%;
@@ -337,9 +368,26 @@ form .full-name input, .contact-email input, .contact-subject input {
 		opacity: 0; /*new change, adding background picture to contact*/
 	}
 
+	/*end navbar for mobiles*/
+
+	/*---------------------------------------------------------*/
+
+	/*fixed on content first navbar list*/
+
+	.fixed-active {
+		position: fixed;
+	}
+	
+	/*end fixed on content first navbar list*/
+
+	/*---------------------------------------------------------*/
+
+	/*form contact for mobiles*/
+
 	form {
 		width: 70%;
 	}
+	/*end form contact for mobiles*/
 }
 
 .firstnavbar-active {
