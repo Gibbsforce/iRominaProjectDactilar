@@ -13,7 +13,7 @@ body {
 .contact-background-picture img {
 	position: absolute;
 	z-index: -1;
-	object-fit: cover;
+	object-fit: fill;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -60,11 +60,15 @@ body {
 	letter-spacing: 1.5px;
 	font-weight: 700;
 	/*transition: ease-in-out .2s;*/
+
+	color: #fff; /*new change jan 29 h: 22.38*/
 }
 
 .action-lang ul li a:hover {
 	color: rgba(209, 222, 219, 1);
 	transition: .2s;
+
+	color: rgba(1, 1, 1,.9);  /*new change jan 29 h: 22.38*/
 }
 
 /*end setting language es en*/
@@ -106,15 +110,21 @@ body {
 	font-weight: 700;
 	color: #034146;
 	/*end new changes date: 01-26-2021*/
+
+	color: #fff;  /*new change jan 29 h: 22.38*/
 }
 
 .firstnavbar ul li a.contact {
 	color: rgba(157, 162, 171,.9);
+
+	color: rgba(1, 1, 1,.9);  /*new change jan 29 h: 22.38*/
 }
 
 .firstnavbar ul li a:hover {
 	color: rgba(157, 162, 171,.9);
 	transition: .2s;
+
+	color: rgba(1, 1, 1,.9);  /*new change jan 29 h: 22.38*/
 }
 
 /*end navbar*/
@@ -123,8 +133,10 @@ body {
 
 /*dactilar logo clean*/
 
+/*this is the logo that she said to remove*/
+
 .logo-clean {
-	height: 60px; /*adding because she said to remove the logo*/
+	height: 60px;
 	background:#fff;
 	text-align: center;
 }
@@ -136,19 +148,20 @@ body {
 	padding: 20px;
 }
 
-.contact-form {
-	display: flex;
-	justify-content: center;
-	color: #667C7E;
-	font-size: 14px;
-	font-family:'Avenir LT W01 55 Roman', sans-serif;
-}
-
 /*end dactilar logo clean*/
 
 /*---------------------------------------------------------*/
 
 /*setting form style for contact*/
+
+.contact-form {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-size: 14px;
+	font-family:'Avenir LT W01 55 Roman', sans-serif;
+	font-weight: bold;
+}
 
 form {
 	width: 35%;
@@ -204,42 +217,24 @@ form .full-name input, .contact-email input, .contact-subject input {
 	padding: 5px 10px;
 	color: #fff;
 	text-transform: uppercase;
-	background-color: #080B0E;
-	border: 1px solid #080B0E;
+	background-color: #034146;
+	border: 1px solid #034146;
 	font-size: 12px;
 	cursor: pointer;
 	user-select: none;
 }
 
-.first-name input {
-	background-color: rgba(1,1,1,.01);
-	border: 1px solid #879C9C;
-	border-radius: 3px;
-}
-
-.last-name input {
-	background-color: rgba(1,1,1,.01);
-	border: 1px solid #879C9C;
-	border-radius: 3px;
-}
-
-.contact-email input {
-	background-color: rgba(1,1,1,.01);
-	border: 1px solid #879C9C;
-	border-radius: 3px;
-}
-
-.contact-subject input {
-	background-color: rgba(1,1,1,.01);
-	border: 1px solid #879C9C;
+.first-name input, .last-name input, .contact-email input, .contact-subject input {
+	background-color: rgba(186,204,201,.8);
+	border: 1px solid #034146;
 	border-radius: 3px;
 }
 
 .contact-message textarea {
 	resize: vertical;
 	height: 100px;
-	background-color: rgba(1,1,1,.01);
-	border: 1px solid #879C9C;
+	background-color: rgba(186,204,201,.8);
+	border: 1px solid #034146;
 	outline: none;
 	border-radius: 3px;
 }
@@ -251,9 +246,9 @@ form .full-name input, .contact-email input, .contact-subject input {
 
 .contact-submit input:hover {
 	opacity: .9;
-	background-color: #667c7e;
+	background-color: rgba(1,1,1,.9);
 	transition: .5s ease-in-out;
-	border: 1px solid #fff;
+	border: 1px solid rgba(1,1,1,0);
 	color: #fff;
 }
 
