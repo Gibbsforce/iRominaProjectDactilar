@@ -17,6 +17,13 @@ const firstNavBarCel = () => {
 			}
 		});
 		firstNavBarCelButton.classList.toggle("toggle");	
+
+		//fixed on content first navbar list
+
+		firstNavBarLinks.classList.add("fixed-active");
+		firstNavBarCelButton.classList.toggle("fixed-active");
+
+		//end fixed on content first navbar list
 	});
 }
 
