@@ -117,14 +117,14 @@ body {
 .firstnavbar ul li a.contact {
 	color: rgba(157, 162, 171,.9);
 
-	color: rgba(1, 1, 1,.9);  /*new change jan 29 h: 22.38*/
+	color: #034146;  /*new change jan 29 h: 22.38*/
 }
 
 .firstnavbar ul li a:hover {
 	color: rgba(157, 162, 171,.9);
 	transition: .2s;
 
-	color: rgba(1, 1, 1,.9);  /*new change jan 29 h: 22.38*/
+	color: #034146;  /*new change jan 29 h: 22.38*/
 }
 
 /*end navbar*/
@@ -286,6 +286,24 @@ form .full-name input, .contact-email input, .contact-subject input {
 	.firstnavbar ul li {
 		opacity: 0;
 	}
+
+	/*fixing responsive mobile navbar because of change of color*/
+
+	.firstnavbar ul li a {
+		font-weight: 700;
+		color: #034146;
+	}
+
+	.firstnavbar ul li a.contact {
+		color: rgba(157, 162, 171,.9);
+	}
+
+	.firstnavbar ul li a:hover {
+		color: rgba(157, 162, 171,.9);
+		transition: .2s;
+	}
+
+	/*end fixing responsive mobile navbar because of change of color*/
 
 	.firstnavbar-cel {
 		display: block;
