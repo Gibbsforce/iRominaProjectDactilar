@@ -250,7 +250,7 @@ body {
 
 
 	height: 625px; /*625px*/ /*810px*/
-	object-fit: cover;
+	object-fit: fill;
 	object-position: 50% 50%;
 }
 
