@@ -241,6 +241,7 @@ form .full-name input, .contact-email input, .contact-subject input {
 	font-size: 14px;
 	cursor: pointer;
 	user-select: none;
+-webkit-appearance: none;
 }
 
 .first-name input, .last-name input, .contact-email input, .contact-subject input {
