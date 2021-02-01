@@ -608,6 +608,8 @@ footer {
 		display: block;
 		background:#fff;
 		text-align: center;
+
+		padding-top: 25px; /*new change d-feb.1.21 h-15:37 giving space to the font*/
 	}
 
 	.dactilar-font-mobile img {

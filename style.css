@@ -134,6 +134,8 @@ body {
 	border: 0;
 	height: 29px;
 	font-size: 12px;
+
+	-webkit-appearance: none;
 }
 
 .submit-popup input {
@@ -276,6 +278,11 @@ body {
 	}
 
 	/*popup subscription mobile*/
+
+	.cover-logo-popup img {
+		width: 30%;
+		height: 30%;
+	}
 
 	.popup-container {
 		width: 70%;
