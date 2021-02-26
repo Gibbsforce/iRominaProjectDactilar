@@ -1,0 +1,340 @@
+body {
+    background-color: #034146;
+    max-width: 100%;
+    justify-content: center;
+	text-align: center;
+	user-select: none;
+    margin: auto 0;
+}
+
+form {
+ 
+}
+
+.logo-summary{
+    position: relative;
+}
+
+.logo-summary img {
+    height: 15%;
+    width: 15%;
+}
+
+.columns-summary {
+    display: flex;
+    justify-content: center;
+
+    /*align-items: center;*/ /*change in order to keep items at top*/
+
+    margin: 0 5%;
+}
+
+.email-checkout, .personal-information-checkout, .aditional-information-checkout, .payments-discounts-checkout, .review-purchase-checkout {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #204545;
+    border-radius: 6px;
+    margin-bottom: 5%;
+}
+
+.title-email-checkout, .title-personal-information-checkout, .aditional-info-title, .payment-title, .review-purchase-title {
+    font-family: 'Libre Baskerville', serif;
+    transform: scale(1, 1.5);
+    color: #C27E53;
+    text-align: left;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.email-checkout-input-parent, .pi-address, .pi-country, .pi-phone-number, .aditional-info-container-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.pi-names, .pi-cities {
+    display: flex;
+    justify-content: center;
+}
+
+.pi-names input, .pi-cities input {
+    width: 100%;
+}
+
+form .email-checkout-input-parent input, .pi-names input, .pi-address input, .pi-country input, .pi-cities input, .pi-phone-number input {
+    outline: none;
+    height: 20px;
+    margin: 2% 2% 0 2%;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #034146;
+}
+
+form .aditional-info-container-text textarea {
+    resize: vertical;
+    outline: none;
+    height: 60px;
+    margin: 2% 2% 0 2%;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #034146;
+}
+
+.text-confirmation-email, .aditional-info-sub-title {
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+    color: #fff;
+    margin: 1% 2% 2% 2%;
+    font-size: 12px;
+}
+
+.text-sub-email, .pi-save-info, .review-alert {
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+    color: #fff;
+    margin: 2%
+}
+
+.alert-text-payment {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    color: #fff;
+    margin: 2%
+}
+
+.email-check-sub {
+    margin: 0;
+}
+
+.summary-buttons-event, .summary-buttons-event-one, .summary-buttons-event-two, .summary-buttons-event-three {
+    margin: 2%;
+    margin-top: 4%;
+    background-color: #034146;
+    color: #fff;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'AvenirLTW01-95BlackObli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.summary-buttons-event, .summary-buttons-event-one, .summary-buttons-event-two, .summary-buttons-event-three {
+    transition: ease-in-out .3s;
+}
+
+.summary-buttons-event:hover, .summary-buttons-event-one:hover, .summary-buttons-event-two:hover, .summary-buttons-event-three:hover {
+    background-color: rgba(1, 1, 1, .4);
+}
+
+.paypal-pic img {
+    width: 150px;
+    height: 100px;
+}
+
+.data-review {
+    display: flex;
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+    color: #fff;
+    margin: 2%
+}
+
+.data-review .return-policy {
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 4%;
+}
+
+.data-review .privacy-policy {
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 4%;
+}
+
+.data-review .return-policy, .data-review .privacy-policy {
+    transition: ease-in-out .3s;
+}
+
+.data-review .return-policy:hover, .data-review .privacy-policy:hover {
+    opacity: .8;
+}
+
+.finish-purchase {
+
+}
+
+.finish-purchase input {
+
+    outline: none;
+	font-family: 'AvenirLTW01-95BlackObli', sans-serif;
+	color: #fff;
+	background-color: #034146;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 6px;
+	border: 0;
+	height: 35px;
+    width: 90%;
+	font-size: 16px;
+
+	-webkit-appearance: none;
+
+    margin: 2%;
+    margin-top: 4%;
+
+}
+
+.finish-purchase input {
+	transition: ease-in-out .3s;
+}
+
+.finish-purchase input:hover {
+	background-color: rgba(1, 1, 1, .4);
+}
+
+/*ened of first column: inputs & purchase*/
+
+/*------------------------------------------------------*/
+
+/*start of last column details*/
+
+.details-summary {
+    margin-left: 5%;
+
+    max-width: 50%;
+}
+
+.summary-details-checkout {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #204545;
+    border-radius: 6px;
+}
+
+.order-summary-title {
+    font-family: 'Libre Baskerville', serif;
+    transform: scale(1, 1.5);
+    color: #C27E53;
+    text-align: left;
+    margin: 2%;
+}
+
+.container-order-summary-details {
+    display: flex;
+    justify-content: center;
+}
+
+.order-image {
+    margin: 2%;
+}
+.order-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+	object-position: 50% 50%;
+}
+
+.text-order {
+    font-size: 12px;
+    text-align: left;
+    margin: 2%;
+    color: white;
+}
+
+.text-order h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.price-order-summary {
+    font-size: 20px;
+    text-align: right;
+    margin: 2%;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.code-order-discount {
+    display: flex;
+}
+
+.code-order-discount input {
+    outline: none;
+    height: 25px;
+    margin: 2% 2% 0 2%;
+    padding-left: 10px;
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid #034146;
+}
+
+.btn-code-discount {
+    margin: 2%;
+    margin-top: 2%;
+    background-color: #034146;
+    color: #fff;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'AvenirLTW01-95BlackObli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 40%;
+}
+
+.btn-code-discount {
+    transition: ease-in-out .3s;
+}
+
+.btn-code-discount:hover {
+	background-color: rgba(1, 1, 1, .4);
+}
+
+.subtotal-order, .tax-order, .shipping-order, .total-order {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    margin-top: 2%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+.subtotal, .tax, .shipping, .total {
+    position: absolute;
+    text-align: left;
+}
+
+.subtotal-price, .tax-price, .shipping-price, .total-price {
+    text-align: right;
+}
+
+.total-order {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 960px) {
+    .logo-summary img {
+        height: 25%;
+        width: 25%;
+    }
+    .columns-summary {
+        display: inline-block;
+    }
+    .details-summary {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .container-order-summary-details {
+        flex-direction: column;
+    }
+}
