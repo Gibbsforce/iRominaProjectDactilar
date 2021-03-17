@@ -4,7 +4,7 @@ const hideThird = document.querySelector('.hide-content-2');
 const hideFourth = document.querySelector('.hide-content-3');
 const hideFifth = document.querySelector('.hide-content-4');
 
-hideFirst.style.display = "none";
+hideFirst.style.display = "block";
 hideSecond.style.display = "none";
 hideThird.style.display = "none";
 hideFourth.style.display = "block";
@@ -77,4 +77,5 @@ btnThird.addEventListener('click', () => {
 
 btnFourth.addEventListener('click', () => {
     hideFifth.style.display = "block";
+    hideFourth.style.display = "none";
 });

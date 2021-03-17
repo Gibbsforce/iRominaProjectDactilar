@@ -13,6 +13,9 @@ form {
 
 .logo-summary{
     position: relative;
+    text-align: left;
+    margin: 0 5%;
+    padding: 2% 0;
 }
 
 .logo-summary img {
@@ -29,7 +32,11 @@ form {
     margin: 0 5%;
 }
 
-.email-checkout, .personal-information-checkout, .aditional-information-checkout, .payments-discounts-checkout, .review-purchase-checkout {
+.email-checkout,
+.personal-information-checkout,
+.aditional-information-checkout,
+.payments-discounts-checkout,
+.review-purchase-checkout {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -38,49 +45,71 @@ form {
     margin-bottom: 5%;
 }
 
-.title-email-checkout, .title-personal-information-checkout, .aditional-info-title, .payment-title, .review-purchase-title {
+.title-email-checkout,
+.title-personal-information-checkout,
+.aditional-info-title,
+.payment-title,
+.review-purchase-title {
     font-family: 'Libre Baskerville', serif;
-    transform: scale(1, 1.5);
+    transform: scale(1, 1.2);
     color: #C27E53;
     text-align: left;
     margin: 2%;
     cursor: pointer;
+    font-size: 20px;
 }
 
-.email-checkout-input-parent, .pi-address, .pi-country, .pi-phone-number, .aditional-info-container-text {
+.email-checkout-input-parent,
+.pi-address,
+.pi-country,
+.pi-phone-number,
+.aditional-info-container-text {
     display: flex;
     flex-direction: column;
 }
 
-.pi-names, .pi-cities {
+.pi-names,
+.pi-cities {
     display: flex;
     justify-content: center;
 }
 
-.pi-names input, .pi-cities input {
+.pi-names input,
+.pi-cities input {
     width: 100%;
 }
 
-form .email-checkout-input-parent input, .pi-names input, .pi-address input, .pi-country input, .pi-cities input, .pi-phone-number input {
+form .email-checkout-input-parent input,
+.pi-names input,
+.pi-address input,
+.pi-country input,
+.pi-cities input,
+.pi-phone-number input {
     outline: none;
-    height: 20px;
+    height: 30px;
     margin: 2% 2% 0 2%;
     padding-left: 10px;
     border-radius: 4px;
     border: 1px solid #034146;
 }
+
+/*input:focus {
+    outline: solid 2px black;
+    border-radius: 4px;
+}*/
 
 form .aditional-info-container-text textarea {
     resize: vertical;
     outline: none;
-    height: 60px;
+    height: 100px;
     margin: 2% 2% 0 2%;
     padding-left: 10px;
     border-radius: 4px;
     border: 1px solid #034146;
 }
 
-.text-confirmation-email, .aditional-info-sub-title {
+.text-confirmation-email,
+.aditional-info-sub-title {
     font-family: 'Libre Baskerville', serif;
     text-align: left;
     color: #fff;
@@ -88,7 +117,9 @@ form .aditional-info-container-text textarea {
     font-size: 12px;
 }
 
-.text-sub-email, .pi-save-info, .review-alert {
+.text-sub-email,
+.pi-save-info,
+.review-alert {
     font-family: 'Libre Baskerville', serif;
     text-align: left;
     color: #fff;
@@ -106,7 +137,10 @@ form .aditional-info-container-text textarea {
     margin: 0;
 }
 
-.summary-buttons-event, .summary-buttons-event-one, .summary-buttons-event-two, .summary-buttons-event-three {
+.summary-buttons-event,
+.summary-buttons-event-one,
+.summary-buttons-event-two,
+.summary-buttons-event-three {
     margin: 2%;
     margin-top: 4%;
     background-color: #034146;
@@ -120,11 +154,17 @@ form .aditional-info-container-text textarea {
     border-radius: 6px;
 }
 
-.summary-buttons-event, .summary-buttons-event-one, .summary-buttons-event-two, .summary-buttons-event-three {
+.summary-buttons-event,
+.summary-buttons-event-one,
+.summary-buttons-event-two,
+.summary-buttons-event-three {
     transition: ease-in-out .3s;
 }
 
-.summary-buttons-event:hover, .summary-buttons-event-one:hover, .summary-buttons-event-two:hover, .summary-buttons-event-three:hover {
+.summary-buttons-event:hover,
+.summary-buttons-event-one:hover,
+.summary-buttons-event-two:hover,
+.summary-buttons-event-three:hover {
     background-color: rgba(1, 1, 1, .4);
 }
 
@@ -155,11 +195,13 @@ form .aditional-info-container-text textarea {
     margin-top: 4%;
 }
 
-.data-review .return-policy, .data-review .privacy-policy {
+.data-review .return-policy,
+.data-review .privacy-policy {
     transition: ease-in-out .3s;
 }
 
-.data-review .return-policy:hover, .data-review .privacy-policy:hover {
+.data-review .return-policy:hover,
+.data-review .privacy-policy:hover {
     opacity: .8;
 }
 
@@ -218,10 +260,12 @@ form .aditional-info-container-text textarea {
 
 .order-summary-title {
     font-family: 'Libre Baskerville', serif;
-    transform: scale(1, 1.5);
+    transform: scale(1, 1.2);
     color: #C27E53;
     text-align: left;
     margin: 2%;
+    margin-bottom: 4%;
+    font-size: 20px;
 }
 
 .container-order-summary-details {
@@ -241,15 +285,16 @@ form .aditional-info-container-text textarea {
 
 .text-order {
     font-size: 12px;
-    text-align: left;
+    text-align: justify;
     margin: 2%;
     color: white;
+    font-family: 'Avenir LT W01 65 Medium', sans-serif;
 }
 
 .text-order h1 {
     margin: 0;
     text-transform: uppercase;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Avenir LT W01 65 Medium', sans-serif;
 }
 
 .price-order-summary {
@@ -257,7 +302,7 @@ form .aditional-info-container-text textarea {
     text-align: right;
     margin: 2%;
     color: white;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Avenir LT W01 65 Medium', sans-serif;
 }
 
 .code-order-discount {
@@ -266,7 +311,7 @@ form .aditional-info-container-text textarea {
 
 .code-order-discount input {
     outline: none;
-    height: 25px;
+    height: 30px;
     margin: 2% 2% 0 2%;
     padding-left: 10px;
     width: 60%;
@@ -297,26 +342,35 @@ form .aditional-info-container-text textarea {
 	background-color: rgba(1, 1, 1, .4);
 }
 
-.subtotal-order, .tax-order, .shipping-order, .total-order {
+.subtotal-order,
+.tax-order,
+.shipping-order,
+.total-order {
     display: flex;
     flex-direction: column;
     margin: 2%;
     margin-top: 2%;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Avenir LT W01 65 Medium', sans-serif;
 }
-.subtotal, .tax, .shipping, .total {
+.subtotal,
+.tax,
+.shipping,
+.total {
     position: absolute;
     text-align: left;
 }
 
-.subtotal-price, .tax-price, .shipping-price, .total-price {
+.subtotal-price,
+.tax-price,
+.shipping-price,
+.total-price {
     text-align: right;
 }
 
 .total-order {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 960px) {
